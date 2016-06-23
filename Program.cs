@@ -17,7 +17,7 @@ namespace Units
                 // Convert a unit using the static function
                 Console.WriteLine(UnitsTable.Convert(1.0, UnitName.mile, UnitName.kilometre));
 
-                // Convert a double varialble using extension method
+                // Convert a double variable using extension method
                 var myNumber = (double)1.536;
                 Console.WriteLine(myNumber.Convert(UnitName.inch,UnitName.centimetre));
             }
