@@ -5,12 +5,13 @@ namespace Units
         Unknown,
         Voltage,
         Current,
+        Charge,
         AparentPower,
         RealPower,
+        Length,
+        Area,
         Volume,
         Mass,
-        Length,
-        Charge,
         Speed,
         Time
     }

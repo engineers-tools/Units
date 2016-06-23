@@ -5,6 +5,9 @@ namespace Units
 {
     public static class UnitsTable
     {
+        /// <sumary>
+        /// Returns a list of predefined Units
+        /// </summary>
         public static List<Unit> Units 
         { 
             get
@@ -31,6 +34,15 @@ namespace Units
                     new Unit() { Name = UnitName.Watt, Symbol = "W", Family = UnitFamily.RealPower, Base = 1.0 },
                     new Unit() { Name = UnitName.kiloWatt, Symbol = "kW", Family = UnitFamily.RealPower, Base = 1000.0 },
                     new Unit() { Name = UnitName.MegaWatt, Symbol = "MW", Family = UnitFamily.RealPower, Base = 1000000.0 },
+                    // Length
+                    new Unit() { Name = UnitName.milimetre, Symbol = "mm", Family = UnitFamily.Length, Base = 0.001 },
+                    new Unit() { Name = UnitName.centimetre, Symbol = "cm", Family = UnitFamily.Length, Base = 0.01 },
+                    new Unit() { Name = UnitName.metre, Symbol = "m", Family = UnitFamily.Length, Base = 1.0 },
+                    new Unit() { Name = UnitName.kilometre, Symbol = "km", Family = UnitFamily.Length, Base = 1000.0 },
+                    new Unit() { Name = UnitName.inch, Symbol = "in", Family = UnitFamily.Length, Base = 0.0254 },
+                    new Unit() { Name = UnitName.foot, Symbol = "ft", Family = UnitFamily.Length, Base = 0.3048 },
+                    new Unit() { Name = UnitName.yard, Symbol = "yd", Family = UnitFamily.Length, Base = 0.9144 },
+                    new Unit() { Name = UnitName.mile, Symbol = "ml", Family = UnitFamily.Length, Base = 1609.34 },
                 };
             }
         }

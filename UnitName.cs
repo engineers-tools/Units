@@ -18,6 +18,20 @@ namespace Units
         Watt,
         miliWatt,
         kiloWatt,
-        MegaWatt
+        MegaWatt,
+        milimetre,
+        centimetre,
+        metre,
+        kilometre,
+        inch,
+        yard,
+        foot,
+        mile,
+        mililitre,
+        litre,
+        cubic_metre,
+        ounce,
+        Gallon_US,
+        Gallon_UK,
     }
 }
