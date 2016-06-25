@@ -13,6 +13,8 @@ namespace Units
         Volume,
         Mass,
         Speed,
-        Time
+        Time,
+        Temperature,
+        Pressure
     }
 }
