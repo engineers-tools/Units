@@ -77,6 +77,12 @@ namespace Units
         Ton_UK,
         Ton_US,
         Stone,
-        Pound
+        Pound,
+        Joule,
+        Calorie,
+        kiloCalorie,
+        Watt_Hour,
+        kiloWatt_Hour,
+        BTU
     }
 }

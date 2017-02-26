@@ -8,6 +8,7 @@ namespace Units
         Charge,
         AparentPower,
         RealPower,
+        Energy,
         Length,
         Area,
         Volume,

@@ -34,6 +34,9 @@ namespace Units
                     new Unit() { Name = UnitName.Watt, Symbol = "W", Family = UnitFamily.RealPower, Base = 1.0 },
                     new Unit() { Name = UnitName.kiloWatt, Symbol = "kW", Family = UnitFamily.RealPower, Base = 1000.0 },
                     new Unit() { Name = UnitName.MegaWatt, Symbol = "MW", Family = UnitFamily.RealPower, Base = 1000000.0 },
+                    // Energy
+                    new Unit() { Name = UnitName.Joule, Symbol = "J", Family = UnitFamily.Energy, Base = 1 },
+                    new Unit() { Name = UnitName.Calorie, Symbol = "cal", Family = UnitFamily.Energy, Base = 4.184 },
                     // Length
                     new Unit() { Name = UnitName.milimetre, Symbol = "mm", Family = UnitFamily.Length, Base = 0.001 },
                     new Unit() { Name = UnitName.centimetre, Symbol = "cm", Family = UnitFamily.Length, Base = 0.01 },
