@@ -33,8 +33,3 @@ Console.WriteLine(UnitsTable.Convert(1.0, UnitName.mile, UnitName.kilometre));
 var myNumber = (double)1.536;
 Console.WriteLine(myNumber.Convert(UnitName.inch,UnitName.centimetre));
 ```
-
-## Work in Progress
-
-This library has just been created and the Units Table still needs to be completed. We'll update as often as we can to make the Units Table as
-complete as possible.
