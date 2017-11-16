@@ -6,5 +6,10 @@ namespace Units
         {
             return UnitsTable.Convert(value, from, to);
         }
+
+        public static double ToPerUnit(this double value, double baseValue)
+        {
+            return UnitsTable.ToPerUnit(value, baseValue);
+        }
     }
 }

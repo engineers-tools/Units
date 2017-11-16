@@ -83,6 +83,12 @@ namespace Units
         kiloCalorie,
         Watt_Hour,
         kiloWatt_Hour,
-        BTU
+        BTU,
+        Ohm,
+        miliOhm,
+        microOhm,
+        kiloOhm,
+        MegaOhm,
+        TeraOhm
     }
 }

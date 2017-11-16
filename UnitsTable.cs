@@ -37,6 +37,13 @@ namespace Units
                     // Energy
                     new Unit() { Name = UnitName.Joule, Symbol = "J", Family = UnitFamily.Energy, Base = 1 },
                     new Unit() { Name = UnitName.Calorie, Symbol = "cal", Family = UnitFamily.Energy, Base = 4.184 },
+                    // Resistance
+                    new Unit() { Name = UnitName.Ohm,     Symbol="Ohm", Family = UnitFamily.Resistance, Base = 1.0 },
+                    new Unit() { Name = UnitName.miliOhm, Symbol="mOhm", Family = UnitFamily.Resistance, Base = 0.001 },
+                    new Unit() { Name = UnitName.microOhm,Symbol="uOhm", Family = UnitFamily.Resistance, Base = 0.000001 },
+                    new Unit() { Name = UnitName.kiloOhm, Symbol="kOhm", Family = UnitFamily.Resistance, Base = 1000.0 },
+                    new Unit() { Name = UnitName.MegaOhm, Symbol="MOhm", Family = UnitFamily.Resistance, Base = 1000000.0 },
+                    new Unit() { Name = UnitName.TeraOhm, Symbol="TOhm", Family = UnitFamily.Resistance, Base = 1000000000.0 },
                     // Length
                     new Unit() { Name = UnitName.milimetre, Symbol = "mm", Family = UnitFamily.Length, Base = 0.001 },
                     new Unit() { Name = UnitName.centimetre, Symbol = "cm", Family = UnitFamily.Length, Base = 0.01 },
@@ -165,6 +172,13 @@ namespace Units
 
             // Default conversion
             return value * (fromUnit.Base / toUnit.Base);
+        }
+
+        public static double ToPerUnit(double value, double baseValue)
+        {
+            if (baseValue == 0) throw new Exception("The base value cannot be zero.");
+
+            return value / baseValue;
         }
     }
 }

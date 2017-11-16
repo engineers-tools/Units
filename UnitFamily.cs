@@ -9,6 +9,7 @@ namespace Units
         AparentPower,
         RealPower,
         Energy,
+        Resistance,
         Length,
         Area,
         Volume,
