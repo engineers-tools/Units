@@ -83,6 +83,9 @@ namespace Units
         kiloCalorie,
         Watt_Hour,
         kiloWatt_Hour,
-        BTU
+        BTU,
+        ppm,
+        miliLitre_per_Litre,
+        microLitre_per_Litre
     }
 }
