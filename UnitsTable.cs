@@ -110,6 +110,11 @@ namespace Units
                     new Unit() { Name = UnitName.Ton_US, Symbol = "ton(US)", Family = UnitFamily.Mass, Base = 907.185 },
                     new Unit() { Name = UnitName.Stone, Symbol = "st", Family = UnitFamily.Mass, Base = 6.35029 },
                     new Unit() { Name = UnitName.Pound, Symbol = "lb", Family = UnitFamily.Mass, Base = 0.452592 },
+
+                    // Concentration
+                    new Unit() { Name = UnitName.ppm, Symbol = "ppm", Family = UnitFamily.Concentration, Base = 1.0 },
+                    new Unit() { Name = UnitName.microLitre_per_Litre, Symbol = "uL/L", Family = UnitFamily.Concentration, Base = 1.0 },
+                    new Unit() { Name = UnitName.miliLitre_per_Litre, Symbol = "mL/L", Family = UnitFamily.Concentration, Base = 1000.0 },
                 };
             }
         }
@@ -135,7 +140,7 @@ namespace Units
             var fromUnit = GetByName(from);
             var toUnit = GetByName(to);
 
-            if (fromUnit.Family != toUnit.Family) throw new Exception(string.Format("Error: Units of family {0} cannot be converted to units of family {1}.",fromUnit.Family, toUnit.Family));
+            if (fromUnit.Family != toUnit.Family) throw new Exception(message: $"Error: Units of family {fromUnit.Family.ToString()} cannot be converted to units of family {toUnit.Family.ToString()}.");
 
             // Temperature conversion formulas
             if(fromUnit.Family == UnitFamily.Temperature)

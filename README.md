@@ -30,6 +30,6 @@ The simplest way to use the conversion funciton, is to use either the static met
 Console.WriteLine(UnitsTable.Convert(1.0, UnitName.mile, UnitName.kilometre));
 
 // Convert a double variable using extension method
-var myNumber = (double)1.536;
+double myNumber = 1.536;
 Console.WriteLine(myNumber.Convert(UnitName.inch,UnitName.centimetre));
 ```

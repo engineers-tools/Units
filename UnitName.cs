@@ -89,6 +89,9 @@ namespace Units
         microOhm,
         kiloOhm,
         MegaOhm,
-        TeraOhm
+        TeraOhm,
+        ppm,
+        miliLitre_per_Litre,
+        microLitre_per_Litre
     }
 }

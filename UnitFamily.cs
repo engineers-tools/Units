@@ -6,6 +6,7 @@ namespace Units
         Voltage,
         Current,
         Charge,
+        Concentration,
         AparentPower,
         RealPower,
         Energy,
