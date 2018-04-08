@@ -1,4 +1,5 @@
 # Units
+
 If you've ever needed to use units of measure in your C# project, this repository is for you.
 
 **Units** is a rather simple but useful library that becomes handy when your project needs to manage and convert between units.
@@ -25,7 +26,8 @@ i.e., a *kilometre* should have a *Base* of 1000.0, a *centimetre* a base of 0.0
 ## Usage
 
 The simplest way to use the conversion funciton, is to use either the static method or the extension method.
-```
+
+```C#
 // Convert a unit using the static function
 Console.WriteLine(UnitsTable.Convert(1.0, UnitName.mile, UnitName.kilometre));
 
